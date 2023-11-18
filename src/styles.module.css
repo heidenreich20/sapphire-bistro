@@ -1,0 +1,8 @@
+.bg {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: opacity;
+    height: 100%;
+    width: 100%;
+  }

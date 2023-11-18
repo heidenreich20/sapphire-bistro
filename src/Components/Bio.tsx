@@ -1,10 +1,47 @@
+import { useState } from 'react'
+import { useTransition, animated } from '@react-spring/web'
 import background from '../assets/bistro-background-alternative.png'
+import gallery1 from '../assets/galery2.webp'
+import chef from '../assets/chef.jpg'
+import costumer from '../assets/costumer.jpg'
+import styles from '../styles.module.css'
+
+const slides = [
+  background,
+  gallery1,
+  chef,
+  costumer
+]
+
 
 const Bio = () => {
+  const [index, set] = useState(0)
+  const transitions = useTransition(index, {
+    key: index,
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    config: { duration: 4000 },
+    onRest: (_a, _b, item) => {
+      if (index === item) {
+        set(state => (state + 1) % slides.length)
+      }
+    },
+    exitBeforeEnter: true,
+  })
+
   return (
-    <section className='w-5/6 relative mx-auto'>
-      <img className='absolute w-full h-full' src={background} alt="restaurant dim background" />
-      <article className='w-full min-h-full text-center py-12 flex-col gap-5 relative bg-base-100/[0.8] m-auto text-lg font-body text-main-text'>
+    <section className='w-5/6 relative mb-5 mx-auto overflow-hidden'>
+      {transitions((style, i) => (
+        <animated.div className={styles.bg}
+        style={{
+          ...style,
+          backgroundImage: `url(${slides[i]}`,
+        }}
+        />
+      ))}
+      {/* <img className='absolute w-full h-full' src={background} alt="restaurant dim background" /> */}
+      <article className='w-full text-center py-12 flex-col gap-5 relative bio-background m-auto text-lg font-body text-main-text'>
         <div className='flex bio gap-5 leading-6 flex-col w-1/3 m-auto'>
           <h3 className="text-xl font-semibold text-secondary">Welcome to Sapphire Bistro</h3>
           <p>Welcome to Sapphire Bistro, a <strong className='text-secondary'>culinary sanctuary</strong> where each dish is a masterpiece crafted with passion and expertise.<br/> Nestled in the heart of a vibran cityscape, our restaurant beckons with an <strong className='text-secondary'>irresistible blend</strong> of flavors and ambiance that promises an unforgettable dining experience.</p>

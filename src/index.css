@@ -65,3 +65,15 @@ nav li:hover::before {
     background: linear-gradient(90deg, rgba(9,9,11,1) 0%, rgba(255,185,0,1) 50%, rgba(9,9,11,1) 100%);
     bottom: 0;
 }
+
+.bio-background {
+    background: linear-gradient(90deg, rgba(9,9,11,1) 0%, rgba(0,0,0,0.6) 50%, rgba(9,9,11,1) 100%);
+}
+
+/* .twin-shadow {
+    box-shadow: 10px 10px 1px 0 rgb(46, 38, 38);
+} */
+
+.twin-shadow {
+    box-shadow: 10px 10px 1px 0 rgba(46, 38, 38, 0.7);
+}
