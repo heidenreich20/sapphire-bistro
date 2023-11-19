@@ -6,7 +6,7 @@ import ProductCard from './ProductCard'
 
 const Products = () => {
   return (
-    <section id='menu' className="w-4/6 m-auto my-20">
+    <section id='menu' className="w-4/6 m-auto my-32">
       <h2 className='font-heading text-secondary mb-10 text-3xl font-bold text-center'>What we offer</h2>
       <article className='flex md:flex-row md:gap-0 gap-5 flex-col justify-between overflow-hidden'>
         <ProductCard
@@ -19,7 +19,7 @@ const Products = () => {
           image={beef}
           title='Beef Wellington'
           price='70$'
-          body='Embark on a culinary journey with our Beef Wellington, an epitome of culinary artistry. Revel in the tenderness of prime beef fillet enveloped in layers of earthy mushroom duxelles and encased in golden, flaky puff pastry. A symphony of flavors awaits with each impeccably crafted slice.'
+          body='Embark on a culinary journey with our Beef Wellington, an epitome of culinary artistry. Revel in the tenderness of prime beef fillet enveloped in layers of earthy mushroom duxelles and encased in golden, flaky puff pastry. A symphony of flavors awaits with each slice.'
         />
         <ProductCard
           image={lobster}
@@ -34,6 +34,7 @@ const Products = () => {
           body='Experience luxury on your plate with our Truffle Risotto. Immerse yourself in creamy Arborio rice infused with the alluring essence of truffles, harmonized with a delicate blend of Parmesan, butter, and aromatic herbs. Every spoonful is a celebration of sophistication and indulgence.'
         />
       </article>
+      <h3 className='w-3/4 m-auto mt-10 text-center italic font-semibold leading-5'>From the classic indulgence of Beef Wellington to the luxurious Truffle Risotto, our offerings redefine fine dining. Savor the elegance of Coq au Vin's traditional French allure or elevate your palate with the opulence of Lobster Thermidor. Join us and experience a gastronomic journey of sophistication and indulgence.</h3>
       <svg className='fill-secondary w-96 m-auto mt-6 h-12' version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200">
         <title>Proyecto nuevo</title>
         <g id="&lt;Group&gt; copy">

@@ -10,6 +10,7 @@ type Value = ValuePiece | [ValuePiece, ValuePiece];
 
 const Reservations = () => {
   const [value, onChange] = useState<Value>(new Date())
+  const [phoneNumber, setPhoneNumber] = useState<string>('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -17,6 +18,31 @@ const Reservations = () => {
     const formattedDate = value instanceof Date ? format(value, "EEEE, MMMM dd, hh:mm") : '';
     toast.success(`Dear Mr./Ms ${form.first_name.value} ${form.last_name.value}, your reservation is confirmed for ${formattedDate}`)
   }
+
+  const handlePhoneNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputPhoneNumber: string = e.target.value;
+    const formattedPhoneNumber: string = inputPhoneNumber
+      .replace(/\D/g, '')
+      .replace(/(\d{1,3})(\d{0,3})(\d{0,3})/, (_, first, middle, last) => {
+        let formatted = '';
+  
+        if (first) {
+          formatted += first;
+        }
+  
+        if (middle) {
+          formatted += `-${middle}`;
+        }
+  
+        if (last) {
+          formatted += `-${last}`;
+        }
+  
+        return formatted;
+      });
+  
+    setPhoneNumber(formattedPhoneNumber);
+  };
 
   return (
     <div id='reservations' className="form-control my-10 w-4/6 m-auto">
@@ -26,13 +52,13 @@ const Reservations = () => {
         <ul className='flex flex-col bg-alt p-5  gap-5 w-fit m-auto'>
           <li className='flex gap-6'>
             <div>
-              <input required type="text" name='first_name' placeholder="Ex: Jane" className="input input-bordered w-full max-w-xs" />
+              <input required type="text" name='first_name' placeholder="e.g. Jane" className="input input-bordered w-full max-w-xs" />
               <label className="label">
                 <span className="label-text-alt">First Name</span>
               </label>
             </div>
             <div>
-              <input required type="text" name='last_name' placeholder="Ex: Doe" className="input input-bordered w-full max-w-xs" />
+              <input required type="text" name='last_name' placeholder="e.g. Doe" className="input input-bordered w-full max-w-xs" />
               <label className="label">
                 <span className="label-text-alt">Last Name</span>
               </label>
@@ -40,7 +66,7 @@ const Reservations = () => {
           </li>
           <li className='flex justify-between items-center h-fit'>
             <label className='w-32' htmlFor="email">Email</label>
-            <input id='email' name='email' type="email" placeholder="Ex: janedoe@gmail.com" className="input input-bordered w-full" />
+            <input id='email' name='email' type="email" placeholder="e.g. janedoe@gmail.com" className="input input-bordered w-full" />
           </li>
           <li className='flex justify-between w-full items-center h-fit'>
             <label className='w-32' htmlFor="phone">Phone</label>
@@ -51,12 +77,13 @@ const Reservations = () => {
                 <option>+54</option>
                 <option>+54</option>
               </select>
-              <input required name='phone' id='phone' type="number" placeholder="Ex: 123-456-789" className="input rounded-l-none border-l-0 input-bordered w-full" />
+              <input required name='phone' id='phone' type="tel" value={phoneNumber}
+        onChange={handlePhoneNumberChange} pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="e.g. 123-456-789" className="input rounded-l-none border-l-0 input-bordered w-full" />
             </div>
           </li>
           <li className='flex justify-between items-center h-fit'>
             <label className='w-32' htmlFor="guest">Number of guests</label>
-            <input name='guest' id='guest' type="number" placeholder="Ex: 1" className="input input-bordered w-1/2" />
+            <input name='guest' id='guest' type="number" placeholder="e.g. 1" className="input input-bordered w-1/2" />
           </li>
           <li className='m-auto'>
             <Calendar onChange={onChange} value={value} />

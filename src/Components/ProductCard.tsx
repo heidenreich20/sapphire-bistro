@@ -20,7 +20,7 @@ const ProductCard = ({ image, price, body, title }: props) => {
             <img className='w-6 h-6 -rotate-90' src={corner} alt="" />
             <span className='font-body italic'>{price}</span>
           </div>
-          <p className='text-main-text mb-2 cursor-default w-4/5 m-auto leading-5 text-shadow'>{body}</p>
+          <p className='text-main-text italic mb-2 cursor-default w-4/5 m-auto leading-5 text-shadow'>{body}</p>
           <div className='flex ml-auto'>
             <img className='w-6 h-6 rotate-90' src={corner} alt="" />
           </div>
