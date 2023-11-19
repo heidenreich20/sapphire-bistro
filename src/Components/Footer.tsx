@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'
 const Footer = () => {
   return (
 
-    <footer className="footer p-10 bg-alt text-base-content">
+    <footer className="footer p-10 bg-alt text-main-text">
       <aside>
         <img className='w-16 h-16' src={logo} alt="company logo" />
         <p>Sapphire Bistro<br />Redefining Culinary Excellence</p>
