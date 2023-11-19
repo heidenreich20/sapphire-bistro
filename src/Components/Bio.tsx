@@ -33,7 +33,7 @@ const Bio = () => {
   return (
     <section className='md:w-5/6 relative mb-5 mx-auto overflow-hidden'>
       {transitions((style, i) => (
-        <animated.div aria-label='animated image background' className={styles.bg}
+        <animated.div className={styles.bg}
         style={{
           ...style,
           backgroundImage: `url(${slides[i]}`,

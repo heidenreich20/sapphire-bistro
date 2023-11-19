@@ -25,22 +25,22 @@ const Reservations = () => {
       .replace(/\D/g, '')
       .replace(/(\d{1,3})(\d{0,3})(\d{0,3})/, (_, first, middle, last) => {
         let formatted = '';
-  
+
         if (first) {
           formatted += first;
         }
-  
+
         if (middle) {
           formatted += `-${middle}`;
         }
-  
+
         if (last) {
           formatted += `-${last}`;
         }
-  
+
         return formatted;
       });
-  
+
     setPhoneNumber(formattedPhoneNumber);
   };
 
@@ -48,8 +48,8 @@ const Reservations = () => {
     <div id='reservations' className="form-control my-10 md:w-4/6 m-auto">
       <Toaster richColors />
       <h2 className='mb-5 text-center font-heading text-3xl font-bold text-secondary'>Make your reservation</h2>
-      <form onSubmit={handleSubmit}>
-        <ul className='flex flex-col bg-alt p-5  gap-5 w-fit m-auto'>
+      <form className='flex flex-col bg-alt w-fit m-auto' onSubmit={handleSubmit}>
+        <ul className='flex flex-col p-5 gap-5'>
           <li className='flex gap-6'>
             <div>
               <input required type="text" name='first_name' placeholder="e.g. Jane" className="input input-bordered w-full max-w-xs" />
@@ -71,25 +71,25 @@ const Reservations = () => {
           <li className='flex justify-between w-full items-center h-fit'>
             <label className='w-32' htmlFor="phone">Phone</label>
             <div className='flex w-full'>
-              <select required name='area_code' className="select rounded-r-none select-bordered">
+              <select aria-label='area code' required name='area_code' className="select rounded-r-none select-bordered">
                 <option>+54</option>
                 <option>+54</option>
                 <option>+54</option>
                 <option>+54</option>
               </select>
               <input required name='phone' id='phone' type="tel" value={phoneNumber}
-        onChange={handlePhoneNumberChange} pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="e.g. 123-456-789" className="input rounded-l-none border-l-0 input-bordered w-full" />
+                onChange={handlePhoneNumberChange} pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="e.g. 123-456-789" className="input rounded-l-none border-l-0 input-bordered w-full" />
             </div>
           </li>
           <li className='flex justify-between items-center h-fit'>
             <label className='w-32' htmlFor="guest">Number of guests</label>
             <input name='guest' id='guest' type="number" placeholder="e.g. 1" className="input input-bordered w-1/2" />
           </li>
-          <li className='m-auto'>
+          <li className='m-auto mt-5'>
             <Calendar onChange={onChange} value={value} />
           </li>
-          <button type='submit' className='py-3 px-5 mt-6 border border-neutral hover:border-secondary mx-auto bg-base-100 w-fit hover:text-secondary transition-colors duration-150 ease-linear'>Make reservation</button>
         </ul>
+        <button type='submit' className='py-3 px-5 my-6 border border-neutral hover:border-secondary mx-auto bg-base-100 w-fit hover:text-secondary transition-colors duration-150 ease-linear'>Make reservation</button>
       </form>
     </div>
   )
