@@ -35,7 +35,7 @@ const Products = () => {
         />
       </article>
       <h3 className='w-3/4 m-auto mt-10 text-center italic font-semibold leading-5'>From the classic indulgence of Beef Wellington to the luxurious Truffle Risotto, our offerings redefine fine dining. Savor the elegance of Coq au Vin's traditional French allure or elevate your palate with the opulence of Lobster Thermidor. Join us and experience a gastronomic journey of sophistication and indulgence.</h3>
-      <svg className='fill-secondary w-96 m-auto mt-6 h-12' version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200">
+      <svg className='fill-secondary w-full m-auto mt-6 h-12' version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200">
         <title>Proyecto nuevo</title>
         <g id="&lt;Group&gt; copy">
           <path id="&lt;Path&gt;" className="s0" d="m638.5 75c-6.6-6.1-26.5 17.5-27.6 19.9 3.1-21.3-9.9-55.5-9.9-53.8 0-1.7-13 32.5-9.9 53.8-1.1-2.4-21-26-27.6-19.9-7.4 6.9 4.6 14.7 8 17.8 1.9 1.8 4.1 3.8 6.4 5.8 8.7 8.1 15.1 19.6 18.2 32.7 2.6 10.9 4.9 21.4 4.9 21.4 0 0 2.3-10.5 4.8-21.4 3.1-13.1 9.6-24.6 18.3-32.7 2.3-2 4.4-4 6.4-5.8 3.4-3.1 15.3-10.9 8-17.8z" />

@@ -4,13 +4,13 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 4rem;
+    scroll-padding-top: 6rem;
 }
 
 .hero-background {
     position: relative;
     background-image: url('./assets/hero-image1.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -67,7 +67,14 @@ nav li:hover::before {
 }
 
 .bio-background {
-    background: linear-gradient(90deg, rgba(9,9,11,1) 0%, rgba(0,0,0,0.6) 50%, rgba(9,9,11,1) 100%);
+    background: rgba(9,9,11, 0.7);
+}
+
+
+@media (min-width: 720px) {
+    .bio-background {
+        background: linear-gradient(90deg, rgba(9,9,11,1) 0%, rgba(0,0,0,0.6) 50%, rgba(9,9,11,1) 100%);
+    }
 }
 
 /* .twin-shadow {

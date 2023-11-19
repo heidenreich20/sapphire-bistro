@@ -45,7 +45,7 @@ const Reservations = () => {
   };
 
   return (
-    <div id='reservations' className="form-control my-10 w-4/6 m-auto">
+    <div id='reservations' className="form-control my-10 md:w-4/6 m-auto">
       <Toaster richColors />
       <h2 className='mb-5 text-center font-heading text-3xl font-bold text-secondary'>Make your reservation</h2>
       <form onSubmit={handleSubmit}>

@@ -2,12 +2,12 @@ import logo from '../assets/logo.png'
 
 const Navbar = () => {
   return (
-    <nav className='z-20 backdrop-blur-sm bg-base-100/[0.7] fixed top-0 flex justify-between w-10/12 py-5'>
+    <nav className='z-20 w-full px-8 text-main-text gap-5 backdrop-blur-sm bg-base-100/[0.7] fixed top-0 flex justify-between py-5'>
       <div className='flex items-center gap-2'>
         <img className='w-8 h-8 aspect-square' src={logo} alt="" />
-        <p className='font-heading text-text font-bold'>Sapphire Bistro</p>
+        <p className='font-heading md:block hidden text-text font-bold'>Sapphire Bistro</p>
       </div>
-      <ul className="flex gap-12 font-heading justify-end">
+      <ul className="flex items-center gap-6 md:gap-12 md:text-base text-sm font-heading justify-end">
         <li className="relative">
           <a href="#menu">Menu</a>
         </li>
