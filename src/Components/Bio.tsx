@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTransition, animated } from '@react-spring/web'
 import background from '../assets/bistro-background.webp'
-import gallery1 from '../assets/galery2.webp'
+import gallery1 from '../assets/galery2-high.webp'
 import chef from '../assets/chef.jpg'
 import costumer from '../assets/costumer.jpg'
 import styles from '../styles.module.css'

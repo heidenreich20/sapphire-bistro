@@ -1,7 +1,7 @@
 import coq from '../assets/dish1-high.webp'
-import beef from '../assets/dish2.webp'
-import lobster from '../assets/dish3.webp'
-import risotto from '../assets/dish4.webp'
+import beef from '../assets/dish2-high.webp'
+import lobster from '../assets/dish3-high.webp'
+import risotto from '../assets/dish4.avif'
 import ProductCard from './ProductCard'
 
 const Products = () => {
