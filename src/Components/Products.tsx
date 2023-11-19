@@ -1,6 +1,6 @@
-import coq from '../assets/dish1.jpg'
+import coq from '../assets/dish1.webp'
 import beef from '../assets/dish2.webp'
-import lobster from '../assets/dish3.jpg'
+import lobster from '../assets/dish3.webp'
 import risotto from '../assets/dish4.avif'
 import ProductCard from './ProductCard'
 

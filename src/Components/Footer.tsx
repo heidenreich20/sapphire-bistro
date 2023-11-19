@@ -2,33 +2,15 @@ import logo from '../assets/logo.png'
 
 const Footer = () => {
   return (
-
-    <footer className="footer p-10 bg-alt text-main-text">
+    <footer className="footer footer-center p-10 bg-alt text-main-text">
       <aside>
-        <img className='w-16 h-16' src={logo} alt="company logo" />
+        <img className='w-16 aspect-square' src={logo} alt="company logo" />
         <p>Sapphire Bistro<br />Redefining Culinary Excellence</p>
+        <p>Copyright © 2023 - All right reserved</p>
       </aside>
-      <nav>
-        <header className="footer-title">Services</header>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
-      </nav>
-      <nav>
-        <header className="footer-title">Company</header>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
-      </nav>
-      <nav>
-        <header className="footer-title">Legal</header>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
-      </nav>
     </footer>
+
+
   )
 }
 

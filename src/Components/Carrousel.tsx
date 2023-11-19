@@ -1,7 +1,7 @@
 import firstImage from '../assets/galery1.webp'
 import secondImage from '../assets/galery2.webp'
-import thirdImage from '../assets/galery3.jpg'
-import fourthImage from '../assets/gallery4.avif'
+import thirdImage from '../assets/galery3.webp'
+import fourthImage from '../assets/gallery4.webp'
 
 const Carrousel = () => {
   return (

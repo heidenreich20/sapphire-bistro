@@ -12,8 +12,8 @@ const ProductCard = ({ image, price, body, title }: props) => {
   const [show, setShow] = useState(false)
 
   return (
-    <div className='flex info-container items-end w-full md:w-[24%] relative' >
-      <img className='pointer-events-none object-cover h-96 -z-20' src={image} alt={`${title}`} />
+    <div className='flex info-container items-end w-full md:w-[24%] h-96 relative' >
+      <img className='pointer-events-none object-cover h-full w-full -z-20' src={image} alt={`${title}`} />
       <div className='info-container overflow-hidden flex flex-col justify-end h-full absolute transition-opacity duration-200 ease-linear'>
         <div className={`${show ? 'translate-y-[0%]' : 'translate-y-[100%]'} pb-10 p-2 transition-transform duration-150 ease-out flex flex-col bg-[#2e2626] info-container`}>
           <div className='flex justify-between'>
