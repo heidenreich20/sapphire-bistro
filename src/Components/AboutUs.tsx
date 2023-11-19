@@ -10,7 +10,7 @@ const AboutUs = () => {
           <article className='h-full flex flex-col overflow-hidden'>
             <div className='flex flex-col mb-4 justify-center items-center gap-3'>
               <h3 className="font-body text-main-text font-semibold text-xl">The bistró</h3>
-              <img src={icon1} alt="" />
+              <img className='w-14 aspect-square' src={icon1} alt="fork and knife icon" />
             </div>
             <p className="text-main-text leading-5 flex h-full items-center">At our Bistro, every dish tells a story. We embrace flavors from around the world and craft them into culinary masterpieces. Our cozy ambiance invites you to savor each bite while creating unforgettable moments. Join us and experience a symphony of tastes that redefine the art of dining.</p>
           </article>
@@ -19,7 +19,7 @@ const AboutUs = () => {
           <article className='h-full flex flex-col overflow-hidden'>
             <div className='flex flex-col mb-4 justify-center items-center gap-3'>
               <h3 className="font-body text-main-text font-semibold text-center text-xl">Our goal</h3>
-              <img src={icon2} alt="" />
+              <img className='w-14 aspect-square' src={icon2} alt="bullseye icon" />
             </div>
             <p className="text-main-text leading-5 flex h-full items-center">Our mission is simple yet profound: to delight your palate and exceed your expectations. We strive to create an environment where passion meets innovation, crafting exceptional dining experiences. From sourcing the finest ingredients to offering impeccable service, we're committed to making your visit memorable.</p>
           </article>
@@ -28,7 +28,7 @@ const AboutUs = () => {
           <article className='h-full flex flex-col overflow-hidden'>
             <div className='flex flex-col mb-4 justify-center items-center gap-3'>
               <h3 className="font-body text-main-text font-semibold text-center text-xl">Awards</h3>
-              <img src={icon3} alt="" />
+              <img className='w-14 aspect-square' src={icon3} alt="laurel icon" />
             </div>
             <p className="text-main-text leading-5 flex h-full items-center">We're honored to have been recognized for our dedication to culinary excellence. Our commitment to quality and creativity has garnered prestigious accolades, celebrating our innovative dishes, exceptional service, and commitment to exceeding gastronomic boundaries. These awards inspire us to continue raising the bar.</p>
           </article>

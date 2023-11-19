@@ -20,19 +20,19 @@ const Carrousel = () => {
       </svg>
       <section className='flex photo-gallery relative w-5/6 py-12 mx-auto justify-between'>
         <div className='w-1/5'>
-          <img className='flex aspect-video object-cover' src={firstImage} alt='restaurant image' />
+          <img className='flex w-full h-fit aspect-video object-cover' src={firstImage} alt='restaurant image' />
           <aside className='text-neutral-500 italic absolute font-body'>Sophisticated</aside>
         </div>
         <div className='w-1/5'>
-          <img className='flex aspect-video object-cover' src={secondImage} alt='restaurant image' />
+          <img className='flex w-full h-fit aspect-video object-cover' src={secondImage} alt='restaurant image' />
           <aside className='text-neutral-500 italic absolute font-body'>Intimate</aside>
         </div>
         <div className='w-1/5'>
-          <img className='flex aspect-video object-cover' src={thirdImage} alt='restaurant image' />
+          <img className='flex w-full h-fit aspect-video object-cover' src={thirdImage} alt='restaurant image' />
           <aside className='text-neutral-500 italic absolute font-body'>Elegant</aside>
         </div>
         <div className='w-1/5'>
-          <img className='flex aspect-video object-cover' src={fourthImage} alt='restaurant image' />
+          <img className='flex w-full h-fit aspect-video object-cover' src={fourthImage} alt='restaurant image' />
           <aside className='text-neutral-500 italic absolute font-body'>Atmospheric</aside>
         </div>
       </section>

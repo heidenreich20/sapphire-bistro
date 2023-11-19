@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTransition, animated } from '@react-spring/web'
-import background from '../assets/bistro-background-alternative.png'
+import background from '../assets/bistro-background.webp'
 import gallery1 from '../assets/galery2.webp'
 import chef from '../assets/chef.jpg'
 import costumer from '../assets/costumer.jpg'
@@ -40,7 +40,6 @@ const Bio = () => {
         }}
         />
       ))}
-      {/* <img className='absolute w-full h-full' src={background} alt="restaurant dim background" /> */}
       <article className='w-full text-center py-12 flex-col gap-5 relative bio-background m-auto text-lg font-body text-main-text'>
         <div className='flex italic gap-5 leading-6 flex-col w-2/3 md:w-1/3 m-auto'>
           <h3 className="text-xl bio font-semibold text-secondary">Welcome to Sapphire Bistro</h3>
