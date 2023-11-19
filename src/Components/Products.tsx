@@ -1,4 +1,4 @@
-import coq from '../assets/dish1.webp'
+import coq from '../assets/dish1-high.webp'
 import beef from '../assets/dish2.webp'
 import lobster from '../assets/dish3.webp'
 import risotto from '../assets/dish4.webp'
