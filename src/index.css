@@ -77,3 +77,28 @@ nav li:hover::before {
 .twin-shadow {
     box-shadow: 10px 10px 1px 0 rgba(46, 38, 38, 0.7);
 }
+
+.ellipsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* .info-container:hover .show-more {
+    display: none;
+}
+
+.info-wrapper {
+    transform: translateY(100%);
+    padding: 0;
+    display: flex;
+    padding: 1.25rem;
+    height: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.info-container:hover .info-wrapper {
+    transform: translateY(0%)
+} */

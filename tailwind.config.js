@@ -11,7 +11,8 @@ export default {
         'body': ['Bellota','ui-sans-serif', 'system-ui',],
       },
       colors: {
-       'main-text': "#EEEEF2"
+       'main-text': "#EEEEF2",
+       'alt': 'rgba(46, 38, 38, 0.7)'
       }
     },
   },
@@ -24,7 +25,7 @@ export default {
           "primary": "#e5e7eb",       
           "secondary": "#FFB900",
           "accent": "#009d2d",       
-          "neutral": "#212d34",       
+          "neutral": "#2f2f31",       
           "base-100": "#09090B",       
           "info": "#00edff",       
           "success": "#00cdac",       

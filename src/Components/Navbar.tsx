@@ -12,7 +12,7 @@ const Navbar = () => {
           <a href="#menu">Menu</a>
         </li>
         <li className="text-secondary relative">
-          <a href="#Reservations">Reservations</a>
+          <a href="#reservations">Reservations</a>
         </li>
         <li className="relative">
           <a href="#carrousel">About us</a>
