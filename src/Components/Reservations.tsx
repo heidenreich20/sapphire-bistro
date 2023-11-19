@@ -89,7 +89,7 @@ const Reservations = () => {
             <Calendar onChange={onChange} value={value} />
           </li>
         </ul>
-        <button type='submit' className='py-3 px-5 my-6 border border-neutral hover:border-secondary mx-auto bg-base-100 w-fit hover:text-secondary transition-colors duration-150 ease-linear'>Make reservation</button>
+        <button aria-label='submit' type='submit' className='py-3 px-5 my-6 border border-neutral hover:border-secondary mx-auto bg-base-100 w-fit hover:text-secondary transition-colors duration-150 ease-linear'>Make reservation</button>
       </form>
     </div>
   )
