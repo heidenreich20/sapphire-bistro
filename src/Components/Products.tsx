@@ -6,28 +6,40 @@ import ProductCard from './ProductCard'
 
 const Products = () => {
   return (
-    <section id='menu' className="w-4/6 m-auto my-32">
-      <h2 className='font-heading text-secondary mb-10 text-3xl font-bold text-center'>What we offer</h2>
-      <article className='flex md:flex-row md:gap-0 gap-5 flex-col justify-between overflow-hidden'>
+    <section id='menu' className="w-5/6 xl:w-4/6 m-auto my-32">
+      <h2 className='font-heading text-secondary mb-10 text-2xl md:text-3xl font-bold text-center'>What we offer</h2>
+      <article className='carousel justify-between md:gap-0 gap-5 '>
         <ProductCard
+          currentSlide='slide1'
+          prevSlide='#slide4'
+          nextSlide='#slide2'
           image={coq}
           title='Coq au Vin'
           price='45$'
           body='Indulge in a classic French delight with our Coq au Vin. Tender chicken braised in rich red wine, infused with savory aromatics, bacon, mushrooms, and pearl onions. Each succulent bite offers a harmonious blend of flavors, a testament to traditional French culinary finesse.'
         />
         <ProductCard
+          currentSlide='slide2'
+          prevSlide='#slide1'
+          nextSlide='#slide3'
           image={beef}
           title='Beef Wellington'
           price='70$'
           body='Embark on a culinary journey with our Beef Wellington, an epitome of culinary artistry. Revel in the tenderness of prime beef fillet enveloped in layers of earthy mushroom duxelles and encased in golden, flaky puff pastry. A symphony of flavors awaits with each slice.'
         />
         <ProductCard
+        currentSlide='slide3'
+        prevSlide='#slide2'
+        nextSlide='#slide4'
           image={lobster}
           title='Lobster Thermidor'
           price='90$'
           body='Treat yourself to the epitome of luxury dining with our Lobster Thermidor. Succulent lobster meat bathed in a velvety blend of brandy-infused cream sauce, accented with mustard and cheese, then delicately broiled to perfection. A decadent homage to the seas finest flavors.'
         />
         <ProductCard
+        currentSlide='slide4'
+        prevSlide='#slide3'
+        nextSlide='#slide1'
           image={risotto}
           title='Truffle Risotto'
           price='55$'

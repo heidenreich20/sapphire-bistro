@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
-    <section className='flex flex-col justify-center gap-24 items-center hero-background h-5/6 w-fit m-auto'>
-      <div className="flex flex-col justify-center items-center text-center w-1/2">
+    <section className='flex flex-col justify-center gap-24 items-center h-4/5 hero-background w-fit mx-auto my-auto md:m-auto'>
+      <div className="flex flex-col justify-center items-center text-center w-2/3 md:w-1/2">
         <h1 className="flex text-3xl md:text-5xl text-main-text leading-normal font-heading">
           Indulge in Culinary Bliss at 'Sapphire Bistro'
         </h1>

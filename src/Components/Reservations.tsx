@@ -47,9 +47,9 @@ const Reservations = () => {
   return (
     <div id='reservations' className="form-control my-10 md:w-4/6 m-auto">
       <Toaster richColors />
-      <h2 className='mb-5 text-center font-heading text-3xl font-bold text-secondary'>Make your reservation</h2>
-      <form className='flex flex-col bg-alt w-fit m-auto' onSubmit={handleSubmit}>
-        <ul className='flex flex-col p-5 gap-5'>
+      <h2 className='mb-5 text-center font-heading text-2xl md:text-3xl font-bold text-secondary'>Make your reservation</h2>
+      <form className='flex p-3 flex-col bg-alt w-fit m-auto' onSubmit={handleSubmit}>
+        <ul className='flex flex-col gap-5'>
           <li className='flex gap-6'>
             <div>
               <input required type="text" name='first_name' placeholder="e.g. Jane" className="input input-bordered w-full max-w-xs" />

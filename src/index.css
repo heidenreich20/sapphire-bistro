@@ -5,6 +5,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
+    overflow-x: hidden;
 }
 
 .hero-background {
@@ -75,6 +76,12 @@ nav li:hover::before {
     .bio-background {
         background: linear-gradient(90deg, rgba(9,9,11,1) 0%, rgba(0,0,0,0.6) 50%, rgba(9,9,11,1) 100%);
     }
+}
+
+@media (max-width: 720px) {
+    .hero-background {
+        background-size: cover;
+    }  
 }
 
 /* .twin-shadow {
